@@ -1,8 +1,6 @@
+import 'react-native-gesture-handler';  // ต้องนำเข้าที่จุดเริ่มต้น
 import { registerRootComponent } from 'expo';
+import App from './App';  // นำเข้าไฟล์หลัก App.js
 
-import App from './App';
-
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in Expo Go or in a native build,
-// the environment is set up appropriately
+// ลงทะเบียนแอปโดยใช้ registerRootComponent เพื่อให้มันทำงานได้ทั้งใน Expo Go และ Native Build
 registerRootComponent(App);
